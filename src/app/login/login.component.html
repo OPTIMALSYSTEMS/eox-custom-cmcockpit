@@ -1,0 +1,15 @@
+<!-- login form -->
+<form (ngSubmit)="login()" #loginForm="ngForm">
+
+  <div class="form-control">
+    <label>Username</label>
+    <input type="text" [(ngModel)]="form.username" name="username" required>
+  </div>
+
+  <div class="form-control">
+    <label>Password</label>
+    <input type="password" [(ngModel)]="form.password" name="password" required>
+  </div>
+
+  <button type="submit" class="primary" [disabled]="!loginForm.form.valid || loading">Login</button>
+</form>
