@@ -3,12 +3,12 @@
 
   <div class="form-control">
     <label>Username</label>
-    <input type="text" [(ngModel)]="form.username" name="username" required>
+    <input class="input" type="text" [(ngModel)]="form.username" name="username" required [disabled]="loading">
   </div>
 
   <div class="form-control">
     <label>Password</label>
-    <input type="password" [(ngModel)]="form.password" name="password" required>
+    <input class="input" type="password" [(ngModel)]="form.password" name="password" required [disabled]="loading">
   </div>
 
   <button type="submit" class="primary" [disabled]="!loginForm.form.valid || loading">Login</button>
