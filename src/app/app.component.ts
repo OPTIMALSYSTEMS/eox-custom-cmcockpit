@@ -21,7 +21,7 @@ export class AppComponent {
     this.userService.user$.subscribe(user => {
       // called every time the current user changes
       this.user = user;
-      this.userImageUri = this.user.imageUri;
+      this.userImageUri = this.user ? this.user.imageUri : null;
     });
   }
 

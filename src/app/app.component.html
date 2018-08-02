@@ -3,7 +3,7 @@
 <app-login *ngIf="!authenticated; else loggedin"></app-login>
 
 <ng-template #loggedin>
-  <img [src]="userImageUri"/>
-  <p>Congratulations! You are looged in <strong>{{user.title}}</strong>!</p>
+  <img [src]="userImageUri" *ngIf="userImageUri"/>
+  <p>Congratulations! You are looged in <strong>{{user?.title}}</strong>!</p>
   <button type="button" (click)="logout()">Logout</button>
 </ng-template>
