@@ -34,3 +34,13 @@ So we create a new component for our language switch running `ng g c lang-switch
 As long as no user is logged in (login form) switching language will only apply to the app. 
 When a user with a different client locale is logged in, behaviour differs. See `lang-switch.component.ts` 
 for implementation details.
+
+## What we got
+After adding our new `lang-switch component` to our login screen and to our application bar, we
+are now able to switch the apps language anywhere. We also provided translations for all visible 
+strings in our UI.
+
+## What's next
+Everything is prepared and looking nice. So we can continue adding the apps
+core functionality. Therefore we'll fetch data from the backend and visualize
+them in a nice way using charts.
