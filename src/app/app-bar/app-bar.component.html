@@ -4,7 +4,8 @@
 
 <!-- actions -->
 <div class="actions">
-  <button type="button" (click)="logout()">Logout</button>
+  <app-lang-switch [hasUser]="true"></app-lang-switch>
+  <button type="button" (click)="logout()" translate>app.logout.button</button>
 </div>
 
 <!-- user image -->

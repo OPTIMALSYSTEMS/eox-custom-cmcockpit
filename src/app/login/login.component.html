@@ -1,3 +1,4 @@
+<app-lang-switch *ngIf="!loading"></app-lang-switch>
 <!-- apps logo -->
 <app-logo></app-logo>
 <div class="claim">The enaio powered case management dashboard</div>
@@ -6,12 +7,12 @@
 <form (ngSubmit)="login()" #loginForm="ngForm">
 
   <div class="form-control">
-    <label>Username</label>
+    <label translate>app.login.username</label>
     <input class="input is-small" type="text" [(ngModel)]="form.username" name="username" required [disabled]="loading">
   </div>
 
   <div class="form-control">
-    <label>Password</label>
+    <label translate>app.login.password</label>
     <input class="input is-small" type="password"
            autocomplete="new-password"
            [(ngModel)]="form.password" name="password" required [disabled]="loading">
@@ -19,5 +20,5 @@
 
   <button type="submit" class="button is-primary"
           [ngClass]="{'is-loading': loading}"
-          [disabled]="!loginForm.form.valid || loading">Login</button>
+          [disabled]="!loginForm.form.valid || loading" translate>app.login.button</button>
 </form>

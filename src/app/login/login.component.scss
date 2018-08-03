@@ -9,6 +9,12 @@
   justify-content: center;
   color: #fff;
 
+  app-lang-switch {
+    position: absolute;
+    right: $app-padding;
+    top: $app-padding;
+  }
+
   app-logo {
     width: 300px;
   }

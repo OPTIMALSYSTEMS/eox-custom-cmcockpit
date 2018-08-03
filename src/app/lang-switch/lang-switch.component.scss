@@ -1,0 +1,30 @@
+@import "./../../styles.vars";
+
+:host {
+
+  .langs {
+    display: flex;
+    align-items: center;
+
+
+    .lang {
+      border: 1px solid rgba(255,255,255, .4);
+      font-size: 11px;
+      padding: 0 $app-padding/2 2px $app-padding/2;
+      cursor: pointer;
+      display: inline-block;
+
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+        border-left:0;
+      }
+
+      &.active {
+        background-color: $accent-color;
+      }
+    }
+  }
+}
