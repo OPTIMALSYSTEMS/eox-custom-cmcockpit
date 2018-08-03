@@ -1,0 +1,30 @@
+@import "./../../styles.vars";
+
+:host {
+
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  app-logo {
+    width: 300px;
+  }
+  .claim {
+    margin-bottom: 1em;
+    background-color: $accent-color;
+    padding: 0 $app-padding/2;
+    margin-top: $app-padding/2;
+    border-radius: 2px;
+  }
+
+  .form-control {
+    margin-top: $app-padding/2;
+  }
+
+  button {
+    margin-top: 2em;
+  }
+}

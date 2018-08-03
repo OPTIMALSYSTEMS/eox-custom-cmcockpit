@@ -1,0 +1,13 @@
+
+<!-- logo -->
+<app-logo></app-logo>
+
+<!-- actions -->
+<div class="actions">
+  <button type="button" (click)="logout()">Logout</button>
+</div>
+
+<!-- user image -->
+<figure class="image" title="{{user?.title}}">
+  <img class="is-rounded" [src]="userImageUri" *ngIf="userImageUri"/>
+</figure>

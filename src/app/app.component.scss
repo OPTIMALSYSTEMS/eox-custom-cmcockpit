@@ -3,6 +3,17 @@
   height: 100%;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
+
+  app-app-bar {
+    flex: 0 0 auto;
+  }
+
+  .app-contents {
+    flex: 1 1 auto;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

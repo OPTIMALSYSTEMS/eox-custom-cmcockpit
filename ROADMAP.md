@@ -5,4 +5,6 @@ enaio client dev feature:
 
 - Set up and configure new enaio client dev project
 - adding a CSS framework
-- adding 3rd party libraries
+- integrating i18n
+- adding 3rd party libraries (ng2-charts)
+- fetching and displaying data from enaio

@@ -1,0 +1,32 @@
+@import "./../../styles.vars";
+
+:host {
+  display: flex;
+  background-color: $color-primary;
+  align-items: center;
+  padding: $app-padding/2;
+  height: 56px;
+
+  .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 $app-padding;
+
+    button {
+      background: transparent;
+      border-radius: 2px;
+      border: 1px solid rgba(255,255,255,.4);
+      color: #fff;
+      padding: 2px 8px 4px 8px;
+      &:hover {
+        border-color: #fff;
+      }
+    }
+  }
+
+  figure.image {
+    width: 40px;
+  }
+}

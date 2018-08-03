@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from '@angular/forms';
 import {EoCoreModule} from '@eo-sdk/core';
+import { AppBarComponent } from './app-bar/app-bar.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AppBarComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
