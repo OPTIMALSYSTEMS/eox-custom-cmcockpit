@@ -2,5 +2,6 @@
   "app.login.username": "Benutzername",
   "app.login.password": "Passwort",
   "app.login.button": "Anmelden",
-  "app.logout.button": "Abmelden"
+  "app.logout.button": "Abmelden",
+  "app.chart.label": "erstellt"
 }

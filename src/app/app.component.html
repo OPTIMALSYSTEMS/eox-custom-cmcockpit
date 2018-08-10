@@ -8,7 +8,21 @@
 
   <div class="app-contents">
 
-    Contents go here ...
+    <div class="products">
+      <div [ngClass]="{selected: !selectedProduct}" (click)="selectProduct()">all</div>
+      <div [ngClass]="{selected: selectedProduct === p}" *ngFor="let p of products" (click)="selectProduct(p)">{{p}}</div>
+    </div>
+
+    <div>{{chart?.size}}</div>
+
+    <div class="chart-container">
+      <canvas baseChart *ngIf="chart"
+              [data]="chart.data"
+              [labels]="chart.labels"
+              [chartType]="'doughnut'"></canvas>
+    </div>
+
+
 
   </div>
 

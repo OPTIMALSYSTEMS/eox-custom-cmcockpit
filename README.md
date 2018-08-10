@@ -35,4 +35,8 @@ const query = {
 
 **Hint:** Consult REST API documentation for information on the type of objects and their fields.
 
-## 
+## Visualize Data
+We are going to make use of a chart library to display our data.
+
+Run `npm i --save ng2-charts chart.js` and import charts module 
+in your `app.module.ts`.

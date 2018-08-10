@@ -9,6 +9,8 @@ import { AppBarComponent } from './app-bar/app-bar.component';
 import { LogoComponent } from './logo/logo.component';
 import { LangSwitchComponent } from './lang-switch/lang-switch.component';
 
+import {ChartsModule} from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { LangSwitchComponent } from './lang-switch/lang-switch.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ChartsModule,
     EoCoreModule.forRoot()
   ],
   providers: [],
