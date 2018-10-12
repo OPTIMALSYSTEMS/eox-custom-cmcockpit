@@ -12,12 +12,8 @@ Run `npm i bulma --save-dev` to install `Bulma` as a dev dependency. Because we 
 files from Bulma SASS sources, we don't need it to be packaged with our application.
 
 We also create a `styles.vars.scss` that will be used to share SASS variables across the application.
-Now import `styles.vars.scss` and Bulma into your applications `styles.scss`. 
-
-Notice: We first import `styles.vars.scss`, then setup sass vars to override the ones used by Bulma to
-match our styles, and then import Bulma. 
-
-
+Now import `styles.vars.scss` and Bulma into your applications `styles.scss`:
+ 
 ```scss
 @import "styles.vars";
 
@@ -26,6 +22,9 @@ $input-focus-border-color: $accent-color;
 
 @import "../node_modules/bulma/bulma.sass";
 ```
+
+Notice: We first import `styles.vars.scss`, then setup sass vars to override the ones used by Bulma to
+match our styles, and then import Bulma.
 
 Now we need to provide our templates with the Bulma classes syntax. In our case we e.g. add `class="input"` to our login forms 
 input, hit save and watch our form getting pretty.
