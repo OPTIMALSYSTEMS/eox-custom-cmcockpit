@@ -29,7 +29,9 @@ You can install `npm i -g eo-client-proxy` to run the proxy from the command lin
 how to use the proxy.
 
 We'll use another enaio dev tool instead, that wraps the `eo-client-proxy` to provide an easy
-to use interface. It's called `enaio dev proxy` and you can download it [here]().
+to use interface. It's called `enaio dev proxy` and you can download it here:
+[ZIP file](https://files.optimal-systems.org/index.php/s/Me5TATrZiqneRtk/download) or 
+[EXE file](https://files.optimal-systems.org/index.php/s/oeCSJQ4bR9H59qG/download)
 
 To be able to proxy request we need to make some changes to our project. First we create a new 
 file `proxy.config.js` in our projects root folder. After that we change the `start` script inside 
@@ -63,8 +65,8 @@ By default `EoCoreModule` is set up with the following configuration
 
 ```json 
 {
-  "main": ["assets/config/main.json"],
-  "translations": ["assets/i18n/"]
+  "main": ["assets/_default/config/main.json"],
+  "translations": ["assets/_default/i18n/"]
 }
 ```
 
@@ -74,7 +76,8 @@ translations of your application can be found.
 For this example we're going to use this defaults, so wee need to add those resources 
 to our project:
 
-- create `i18n` and `config` folder inside projects `assets` folder. 
+- create `_defaults` folder inside projects `assets` folder. 
+- create `i18n` and `config` folder inside `_default` folder. 
 - add empty `de.json` and `en.json` file inside `i18n` folder
 - add `main.json` file inside `config` folder
 
