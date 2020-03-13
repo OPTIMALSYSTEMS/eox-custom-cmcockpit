@@ -14,7 +14,10 @@ import {EoCoreModule} from '@eo-sdk/core';
   imports: [
     BrowserModule,
     FormsModule,
-    EoCoreModule.forRoot()
+    EoCoreModule.forRoot({
+      "main": ["assets/_default/config/main.json"],
+      "translations": ["assets/_default/i18n/"]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
