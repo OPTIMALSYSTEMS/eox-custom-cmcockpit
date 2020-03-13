@@ -20,7 +20,10 @@ import { LangSwitchComponent } from './lang-switch/lang-switch.component';
   imports: [
     BrowserModule,
     FormsModule,
-    EoCoreModule.forRoot()
+    EoCoreModule.forRoot({
+      "main": ["assets/_default/config/main.json"],
+      "translations": ["assets/_default/i18n/"]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
